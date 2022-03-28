@@ -1,1 +1,52 @@
-#
+# Deploy ADF self-hosted 2 to UAT environment. I have a shared SHIR.
+
+name: ADF2 SHIR Workspace Deployment 
+
+on:
+  workflow_dispatch:
+    inputs:
+      resourceGroup:
+        description: "Resource group name"
+        default: 'rg-adf-self-hosted-destination'
+        required: true
+      targetADFName:
+        description: "Target ADF to deploy to"
+        default: 'adf-self-hosted-uat-linked'
+        required: true
+
+jobs:
+  deploy-to-uat:
+    name: Deploy to UAT 
+    runs-on: ubuntu-latest
+  
+    steps:
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        enable-AzPSSession: true
+        
+    - name: Checkout adf_publish branch
+      uses: actions/checkout@v3
+      with:
+        ref: 'adf_publish'
+
+    - name: ADF UAT Deploy 
+      uses: Azure/data-factory-deploy-action@v1.2.0
+      with: 
+        resourceGroupName: ${{ github.event.inputs.resourceGroup }}
+        dataFactoryName: ${{ github.event.inputs.targetADFName }}
+        armTemplateFile: adf-self-hosted-two/ARMTemplateForFactory.json
+        armTemplateParametersFile: adf-self-hosted-two/ARMTemplateParametersForFactory.json
+        skipAzModuleInstallation: false 
+
+    
+
+
+
+
+
+    
+
+
+
