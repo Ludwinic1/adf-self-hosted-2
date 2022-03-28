@@ -1,0 +1,13 @@
+{
+	"name": "IR-LINKED-SHIR",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "linked",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/126c93ce-f0a6-493c-8991-cdcbd797366d/resourcegroups/rg-adf-selfhosted-test/providers/Microsoft.DataFactory/factories/adf-self-hosted-test/integrationruntimes/IR-SHIR1",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}

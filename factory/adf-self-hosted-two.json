@@ -1,0 +1,9 @@
+{
+	"name": "adf-self-hosted-two",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "33f67d2e-baef-4590-a3f6-645a356f8dac",
+		"tenantId": "2aa8e0e2-e629-4970-b9d6-d534a9ac3386"
+	}
+}
