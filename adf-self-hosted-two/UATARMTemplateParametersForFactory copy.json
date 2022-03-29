@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-self-hosted-two"
+		},
+		"IR-LINKED-SHIR_properties_typeProperties_linkedInfo_resourceId": {
+			"value": "/subscriptions/126c93ce-f0a6-493c-8991-cdcbd797366d/resourcegroups/rg-adf-selfhosted-test/providers/Microsoft.DataFactory/factories/adf-self-hosted-test/integrationruntimes/IR-SHIR1"
+		}
+	}
+}
