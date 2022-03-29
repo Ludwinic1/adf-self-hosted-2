@@ -37,7 +37,7 @@ jobs:
         resourceGroupName: ${{ github.event.inputs.resourceGroup }}
         dataFactoryName: ${{ github.event.inputs.targetADFName }}
         armTemplateFile: adf-self-hosted-two/ARMTemplateForFactory.json
-        armTemplateParametersFile: adf-self-hosted-two/ARMTemplateParametersForFactory.json
+        armTemplateParametersFile: adf-self-hosted-two/UATARMTemplateParametersForFactory.json
         skipAzModuleInstallation: false 
 
     
