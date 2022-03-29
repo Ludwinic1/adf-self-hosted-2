@@ -3,10 +3,10 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"factoryName": {
-			"value": "adf-self-hosted-two"
+			"value": "adf-self-hosted-uat-linked"
 		},
 		"IR-LINKED-SHIR_properties_typeProperties_linkedInfo_resourceId": {
-			"value": "/subscriptions/126c93ce-f0a6-493c-8991-cdcbd797366d/resourcegroups/rg-adf-selfhosted-test/providers/Microsoft.DataFactory/factories/adf-self-hosted-test/integrationruntimes/IR-SHIR1"
+			"value": "/subscriptions/126c93ce-f0a6-493c-8991-cdcbd797366d/resourcegroups/rg-adf-self-hosted-destination/providers/Microsoft.DataFactory/factories/adf-self-hosted-uat/integrationruntimes/IR-SHIR1"
 		}
 	}
 }
